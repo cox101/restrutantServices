@@ -9,14 +9,14 @@ public class Restaurants {
         Scanner input = new Scanner(System.in);
         boolean quit= false;
         int sum=0;
-        int wine=200,nyamaChoma=2000,bear=400,juice=100;
+        int wine=2000,nyamaChoma=2000,seaFoodPlatter=3000,juice=100;
         String order="";
 
         do{
             System.out.println("ITEM"+"\t\tPrice");
-            System.out.println("1.Wine"+"\t\t"+"200");
+            System.out.println("1.Wine"+"\t\t"+"2000");
             System.out.println("2.Nyamachoma"+"\t"+"2000");
-            System.out.println("3.Bean"+"\t\t"+"400");
+            System.out.println("3.Seafood Platter"+"\t\t"+"3000");
             System.out.println("4.Juice"+"\t\t"+"100");
             System.out.println("5.Quit");
 
@@ -29,15 +29,15 @@ public class Restaurants {
 
                     break;
                 case 2:
-                    System.out.println("Chapati");
+                    System.out.println("Nyamachoma");
                     sum=sum+nyamaChoma;
-                    order=order.concat("Chapati"+"\n");
+                    order=order.concat("Nyamachoma"+"\n");
 
                     break;
                 case 3:
-                    System.out.println("Bear");
-                    sum=sum+bear;
-                    order=order.concat("Bear"+"\n");
+                    System.out.println("SeaFoodPlatter");
+                    sum=sum+seaFoodPlatter;
+                    order=order.concat("SeaFood Platter"+"\n");
                     break;
                 case 4:
                     System.out.println("Juice");
@@ -61,9 +61,5 @@ public class Restaurants {
         System.out.println("Thank you");
 
 
-
-
-
     }
-
 }
